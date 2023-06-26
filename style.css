@@ -186,7 +186,7 @@ main article:nth-child(3) section.card-footer p {
   }
 
   main article:nth-child(1) {
-    width: 300px;
+    width: 275px !important;
   }
   main article:nth-child(1) section form div.row:nth-child(1) {
     flex-direction: column;
@@ -199,10 +199,10 @@ main article:nth-child(3) section.card-footer p {
     margin-left: 0;
   }
   main article:nth-child(2) {
-    width: 300px;
+    width: 275px !important;
   }
   main article:nth-child(3) {
-    width: 300px;
+    width: 275px !important;
     margin: 20px 0;
   }
 }
