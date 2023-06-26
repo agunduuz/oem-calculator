@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Oem Calculator" />
+    <meta name="keywords" content="Oem Calculator" />
+    <meta name="author" content="Anıl Gündüz" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Project - Oem Calculator</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="https://github.com/agunduuz" class="navbar-brand">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <input type="text" placeholder="Name" id="productName" />
+              </div>
+              <div class="col-6">
+                <input type="text" placeholder="Price" id="productPrice" />
+              </div>
+            </div>
+            <div class="row">
+              <button type="submit" class="addBtn">
+                <i class="fas fa-plus"></i>Add
+              </button>
+              <button type="submit" class="updateBtn">
+                <i class="far fa-edit"></i>Save Changes
+              </button>
+              <button type="submit" class="deleteBtn">
+                <i class="fas fa-times"></i>Delete
+              </button>
+              <button type="submit" class="cancelBtn">
+                <i class="fas fa-arrow-circle-left"></i>Cancel
+              </button>
+            </div>
+          </form>
+        </section>
+      </article>
+      <article id="productCard">
+        <table class="table">
+          <tbody id="item-list"></tbody>
+        </table>
+      </article>
+      <article>
+        <section class="card-footer">
+          <p>
+            Total (₺) <strong><span id="total-tl"></span>₺</strong>
+          </p>
+          <p>
+            Total ($) <strong><span id="total-dollar"></span>$</strong>
+          </p>
+        </section>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

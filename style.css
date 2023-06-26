@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --main-color: #ffef6f;
+  --content-color: #ff9757;
+  --third-color: #d84545;
+  --fourd-color: #7b3030;
+  --white-color: #f7f7f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins';
+  background-image: linear-gradient(
+    to right bottom,
+    #fff7b9,
+    #fff5a7,
+    #fff395,
+    #fff183,
+    #ffef6f
+  );
+
+  min-height: 100vh;
+  color: var(--fourd-color);
+}
+
+header {
+  background-color: var(--content-color);
+  padding: 10px;
+  text-align: center;
+}
+header nav.navbar a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+main article:nth-child(1) {
+  background-color: var(--content-color);
+  width: 600px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+main article:nth-child(1) section form div.row:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+main article:nth-child(1) section form div.row div.col-6 {
+  width: 100%;
+  margin: 7px;
+}
+main article:nth-child(1) section form div.row div.col-6 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: var(--white-color);
+  color: var(--third-color);
+}
+
+main article:nth-child(1) section form button {
+  margin-left: 7px;
+  margin-top: 7px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+main article:nth-child(1) section form button:nth-child(1) {
+  background-color: #4c8077;
+  color: var(--white-color);
+}
+main article:nth-child(1) section form button:nth-child(1):hover {
+  background-color: var(--white-color);
+  color: #4c8077;
+}
+main article:nth-child(1) section form button:nth-child(2) {
+  background-color: var(--main-color);
+  color: #000;
+}
+main article:nth-child(1) section form button:nth-child(2):hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+main article:nth-child(1) section form button:nth-child(3) {
+  background-color: var(--third-color);
+  color: var(--white-color);
+}
+main article:nth-child(1) section form button:nth-child(3):hover {
+  background-color: var(--white-color);
+  color: var(--third-color);
+}
+main article:nth-child(1) section form button:nth-child(4) {
+  background-color: #402e32;
+  color: var(--white-color);
+}
+main article:nth-child(1) section form button:nth-child(4):hover {
+  background-color: var(--white-color);
+  color: #402e32;
+}
+main article:nth-child(1) section form button i {
+  margin-right: 3px;
+}
+
+main article:nth-child(2) {
+  width: 600px;
+  padding: 15px;
+  margin-top: 20px;
+  color: var(--fourd-color);
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+main article:nth-child(2) table {
+  width: 100%;
+}
+main article:nth-child(2) table tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--fourd-color);
+  padding: 3px 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+main article:nth-child(2) table tbody tr td:nth-child(1) {
+  font-weight: 600;
+}
+main article:nth-child(2) table tbody tr.bg {
+  border-bottom: 2px solid var(--content-color) !important;
+}
+main article:nth-child(2) table tbody tr td i {
+  padding: 7px;
+  background-color: var(--third-color);
+  color: var(--white-color);
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+main article:nth-child(2) table tbody tr td i:hover {
+  background-color: transparent;
+  color: var(--third-color);
+}
+main article:nth-child(3) {
+  width: 600px;
+  padding: 15px;
+  margin-top: 20px;
+  color: var(--white-color);
+  background-color: var(--fourd-color);
+  border-radius: 10px;
+}
+
+main article:nth-child(3) section.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main article:nth-child(3) section.card-footer p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 420px) {
+  header nav.navbar a {
+    font-size: 1.25rem;
+  }
+
+  main article:nth-child(1) {
+    width: 300px;
+  }
+  main article:nth-child(1) section form div.row:nth-child(1) {
+    flex-direction: column;
+  }
+  main article:nth-child(1) section form div.row div.col-6 {
+    margin: 5px 0;
+  }
+  main article:nth-child(1) section form button {
+    width: 100%;
+    margin-left: 0;
+  }
+  main article:nth-child(2) {
+    width: 300px;
+  }
+  main article:nth-child(3) {
+    width: 300px;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  header nav.navbar a {
+    font-size: 1.25rem;
+  }
+
+  main article:nth-child(1) {
+    width: 450px;
+  }
+  main article:nth-child(1) section form div.row:nth-child(1) {
+    flex-direction: column;
+  }
+  main article:nth-child(1) section form div.row div.col-6 {
+    margin: 5px 0;
+  }
+  main article:nth-child(1) section form button {
+    /* width: 100%; */
+    margin-left: 0;
+  }
+  main article:nth-child(2) {
+    width: 450px;
+  }
+  main article:nth-child(3) {
+    width: 450px;
+    margin: 20px 0;
+  }
+}
